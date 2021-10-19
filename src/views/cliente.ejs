@@ -11,7 +11,11 @@
 		<%- include('./partials/navigation.ejs') -%>
 
 		<div class="container">
+			<% if (regist == 'cliente') { %>
 			<h3>Cliente</h3>
+			<% } else { %>
+			<h3>No esta registrado <a href="/">Registrese aqui</a></h3>
+			<% } %>
 		</div>
 	</body>
 </html>

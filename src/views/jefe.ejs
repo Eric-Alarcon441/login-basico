@@ -9,9 +9,12 @@
 	</head>
 	<body>
 		<%- include('./partials/navigation.ejs') -%>
-
 		<div class="container">
+			<% if (regist == 'jefe') { %>
 			<h3>Jefe</h3>
+			<% } else { %>
+			<h3>No esta registrado <a href="/">Registrese aqui</a></h3>
+			<% } %>
 		</div>
 	</body>
 </html>

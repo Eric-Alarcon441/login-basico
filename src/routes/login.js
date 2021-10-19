@@ -1,5 +1,5 @@
 const express = require('express');
-const { NULL } = require('mysql/lib/protocol/constants/types');
+const session = require('express-session');
 const router = express.Router();
 const dbConn = require('../dbConn');
 const conn = dbConn();
@@ -26,4 +26,5 @@ router.post('/', (req, res) => {
 		}
 	);
 });
+
 module.exports = router;
